@@ -31,7 +31,7 @@ st.title('Jobs Recommender System')
 option = st.selectbox('Select your Job: ', jobs_df['Job_Name'].values)
 
 if st.button('Click here to Recommend'):
-    recommendation = get_recommendations(option)
+    recommendation = get_recommendations(job_title, num_recommendations)
     for i, row in recommendation.iterrows():
     st.write('Job Title: ', row['Job_Name'])
     #st.write("Job Title: ", row['Job Title Cleaned'], " | Company: ", row['Company'], " | Industry: ", row['Industry'],"| Type of Role: ", row['Type of role cleaned'])
