@@ -11,7 +11,7 @@ import streamlit as st
 
 jobs_df = pickle.load(open('JOB DATA.pkl', 'rb'))
 
-tfidf_matrix = pickle.load(open('cosine1_sim.pkl', 'rb'))
+tfidf_matrix = pickle.load(open('TDIDD MATRIX.pkl', 'rb'))
 
 st.set_page_config(layout="centered")
 
